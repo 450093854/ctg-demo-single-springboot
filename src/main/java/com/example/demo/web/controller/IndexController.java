@@ -19,7 +19,8 @@ public class IndexController {
     @GetMapping("")
     public JSONObject hello(String name) {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("random", RandomStringUtils.randomAlphabetic(16));
+        //jsonObject.put("random", RandomStringUtils.randomAlphabetic(16));
+        jsonObject.put("random","new");
         if (StringUtils.isNotBlank(name)) {
             jsonObject.put("welcome", "hello, " + name + "!");
         }
